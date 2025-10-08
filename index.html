@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Push.js Sample</title>
+  </head>
+  <body>
+    <h1>Push.js Sample</h1>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.7/push.min.js"></script>
+    <script type="text/javascript">
+      Push.create("Push 通知だよ！", {
+        body: "本文だよここに表示されるよ",
+        icon: './images/icon.png',
+        timeout: 4000,
+        onClick: function () {
+          location.href = 'https://yahoo.co.jp';
+          this.close();
+        }
+      });
+    </script>
+  </body>
+</html>
